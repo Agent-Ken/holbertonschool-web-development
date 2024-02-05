@@ -12,9 +12,9 @@ This webpage will contain a **header**, **footer** and **5 sections**:
 
 1. **Header**
 2. **Sections:**
-  - *Banner*
-  - *Quote*
-  - *Videos*
-  - *Membership*
-  - *FAQ*
+   - *Banner*
+   - *Quote*
+   - *Videos*
+   - *Membership*
+   - *FAQ*
 3. **Footer**
