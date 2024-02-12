@@ -11,11 +11,5 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 - What are Box properties in CSS
 - How does the browser load a webpage
 
-## Concepts
-
-For this project, we expect you to look at these concepts:
-
-- Some pointers about CSS
-- CSS fundamentals
-- CSS advanced
-
+The **main goal** of the project is to create a website that uses the following design:
+![image](https://github.com/Agent-Ken/holbertonschool-web-development/assets/128805216/37f894af-00de-44fd-96fe-f11ba220de51)
