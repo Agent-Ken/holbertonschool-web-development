@@ -16,7 +16,7 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 ![image](https://github.com/Agent-Ken/holbertonschool-web-development/assets/128805216/76c8113d-2000-49c6-9cda-278fcdf11a5f)
 
 ## Sections
-This webpage will contain a **header**, **footer** and **5 sections**:
+This webpage will contain a **header**, **5 sections** and a **footer**:
 
 1. **Header**
 2. **Sections:**
