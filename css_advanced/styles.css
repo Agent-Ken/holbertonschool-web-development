@@ -35,12 +35,12 @@
 /* Unused fonts
 
 @font-face {
-  font-family: "SourceSansPro-BlackIt";
+  font-family: "SourceSansPro-Black";
   src: url(./fonts/SourceSansPro-BlackIt.otf);
 }
 
 @font-face {
-  font-family: "SourceSansPro-SemiboldIt";
+  font-family: "SourceSansPro-It";
   src: url(./fonts/SourceSansPro-SemiboldIt.otf);
 
 */
@@ -83,7 +83,7 @@ body {
 }
 
 .header div.navsec a {
-  font-family: "SourceSansPro-Bold", sans-serif;
+  font-family: "SourceSansPro-Bold";
   margin-right: 53px; /* Could also use "gap" in |.header div.navsec| instead of margin-right here  */
   color: #fff;
   font-size: 12px;
@@ -103,7 +103,7 @@ body {
 }
 
 .banner .top-div {
-  font-family: "SourceSansPro-Bold", sans-serif;
+  font-family: "SourceSansPro-Bold";
   /* The rules below replace | text-align: center; | -- Had to use this, was messing up the layout when viewed on mobile devices */
   /* margin: auto; -- Not sure if needed*/
   display: flex;
@@ -122,7 +122,7 @@ body {
 }
 
 .banner button {
-  font-family: "SourceSansPro-Semibold", sans-serif;
+  font-family: "SourceSansPro-Semibold";
   font-size: 14px;
   line-height: 17.6px;
   padding: 13px 20px;
@@ -136,7 +136,7 @@ body {
 }
 
 .banner h2 {
-  font-family: "SourceSansPro-Light", sans-serif;
+  font-family: "SourceSansPro-Light";
   text-align: center;
   font-size: 32px;
 }
@@ -147,7 +147,7 @@ body {
 
 .banner .bottom-div span {
   color: #C271FF;;
-  font-family: "SourceSansPro-Bold", sans-serif;
+  font-family: "SourceSansPro-Bold";
 }
 
 .banner .bottom-div .persons {
@@ -165,14 +165,14 @@ body {
 }
 
 .banner .bottom-div .persons h3 {
-  font-family: "SourceSansPro-Black", sans-serif;
+  font-family: "SourceSansPro-Black";
   padding-top: 18px;
   padding-bottom: 2px;
   line-height: 27px;
 }
 
 .banner .bottom-div .persons p {
-  font-family: "SourceSansPro-It", sans-serif;
+  font-family: "SourceSansPro-It";
   font-size: 16px;
   line-height: 24px;
 }
@@ -210,17 +210,17 @@ body {
 }
 
 .quote .quote-div div blockquote {
-  font-family: "SourceSansPro-Regular", sans-serif;
+  font-family: "SourceSansPro-Regular";
   line-height: 33.6px;
 }
 
 .quote .quote-div div p {
-  font-family: "SourceSansPro-Bold", sans-serif;
+  font-family: "SourceSansPro-Bold";
   margin-top: 22px;
 }
 
 .quote .quote-div div p:last-child {
-  font-family: "SourceSansPro-It", sans-serif;
+  font-family: "SourceSansPro-It";
   margin-top: 8px;
 }
 
@@ -231,35 +231,43 @@ body {
 
 .video {
   background-color: #fff;
-  padding: 87px 105px;
+  padding: 87px 106px;
 }
 
 .video h1 {
-  font-family: "SourceSansPro-Light", sans-serif;
+  font-family: "SourceSansPro-Light";
   font-size: 32px;
   text-align: center;
   margin-bottom: 75px;
 }
 
 .video h1 span {
-  font-family: "SourceSansPro-Bold", sans-serif;
+  font-family: "SourceSansPro-Bold";
   color: #C271FF;
 }
 
 .vids-block .video-div h2 {
   font-size: 16px;
-  font-family: "SourceSansPro-Bold", sans-serif;
+  font-family: "SourceSansPro-Bold";
   padding: 18px 0 7.6px 13px;
 }
 
 .vids-block .video-div .author h3 {
   font-size: 14px;
-  font-family: "SourceSansPro-Semibold", sans-serif;
+  font-family: "SourceSansPro-Semibold";
   color: #C271FF;
+  padding: 2px 0 15px 0;
+  line-height: 27px;
+}
+
+.video .video-div .author {
+  display: flex;
+  align-items: center;
 }
 
 .vids-block {
   padding: 0 58px;
+  margin: auto;
   max-width: 1228px;
   display: flex;
   justify-content: space-between;
@@ -267,12 +275,19 @@ body {
 
 .video .vids-block .video-div {
   margin-right: 30px;
+  /* margin-left: 0; -- doesnt work for some reason but this is not that important */
   max-width: 255px;
+  position: relative; /* Very important! Without this, the ::after button won't appear on the images. Basically "establishes a positioning context". */
 }
 
-.video .vids-block:nth-last-child(-n + 3) { /* to not have the last vid block get unnecessary/incorrect margin */
+/* Remove the part below later. I had an idea on how to be even more precise to not have the last vid block get unnecessary/incorrect margin
+but it ended up removing margin on the right side altogether 
+
+.video .vids-block:nth-last-child(n + 3) { 
   margin-right: 0;
 }
+
+*/
 
 .video-div > img {
   width: 255px;
@@ -280,23 +295,54 @@ body {
 }
 
 .video-div > p {
-  font-family: "SourceSansPro-Regular", sans-serif;
-
+  font-family: "SourceSansPro-Regular";
+  opacity: 50%;
+  font-size: 14px;
+  padding: 0 0 13.4px 13px;
+  line-height: 24px;
 }
 
 .video .video-div .author img {
   height: 30px;
   width: 30px;
+  padding: 0 13px 14px 13px;
 }
 
 .video .vid-rating img {
   width: 15px;
   height: 14px;
-  
+}
+
+.video .vid-rating {
+  display: flex;
+  align-items: center;
+  margin: 0 22px 0 13px;
+}
+
+.video .vid-rating .stars {
+  display: flex;
+  gap: 8px;
 }
 
 .video .vid-rating p {
-  
+  font-family: "SourceSansPro-Semibold";
+  padding-left: 79px;
+  line-height: 27px;
+  font-size: 14px;
+  color: #C271FF;
+}
+
+.video .video-div::after {
+  content: ""; /* Empty content for pseudo-element */
+  background-image: url("./images/playbutton.png");
+  background-size: 64px 64px; /* determines how a background image should be sized within its container */
+  height: 64px; /* Height of the pseudo-element */
+  width: 64px; /* And its width */
+  position: absolute; /* Very important just like the `position: relative` above in the `.video .vids-block .video-div{}`.
+  It is basically a position relative to the outer "container". */
+  top: 45px;
+  left: 96px;
+  cursor: pointer;
 }
 
 /* END of Video part */
@@ -304,12 +350,77 @@ body {
 
 /* -----Membership part */
 
+section.membership {
+  background-color: #071629;
+  color: #FFFFFF;
+}
+
+section.membership > h1 {
+  font-family: "SourceSansPro-Light";
+  font-size: 32px;
+  text-align: center;
+  padding: 70px 0 58px 0;
+  /* line-height: 40px; */ 
+}
+
+section.membership span {
+  color: #C271FF;
+  font-family: "SourceSansPro-Bold";
+}
+
+.membership .membership-container {
+  max-width: 1112px; /* Max width 1440 minus 164 from left and right */
+  display: flex;
+  align-items: center;
+  padding: 0 164px 85px 164px;
+  gap: 29px;
+  margin: auto; /* centers */
+}
+
+.membership .membership-container .membership-block img {
+  width: 44px;
+  height: 35px;
+}
+
+.membership .membership-container .membership-block {
+  text-align: center;
+  line-height: 26px;
+}
+
+.membership .membership-container .membership-block h2 {
+  font-family: "SourceSansPro-Semibold";
+  font-size: 18px;
+  padding: 27px 0 13px 0;
+}
+
+.membership .membership-container .membership-block p {
+  font-family: "SourceSansPro-Regular";
+  font-size: 14px;
+  padding: 0 22.5px;
+}
+
+.membership button {
+  cursor: pointer;
+  margin: auto;
+  display: block; /* Setting to block because they automatically expand to fill the available width (this ensures that the button spans the entire width of the parent container) */
+  padding: 13px 21px;
+  font-family: "SourceSansPro-Semibold";
+  font-size: 14px;
+  color: #FFFFFF;
+  background-color: #C271FF;
+  box-shadow: 0px 2px 20px 0px #00000080;
+  border: none; /* no one likes default button border */
+  border-radius: 20px;
+}
 
 /* END of Membership part */
 
 
 /* ------FAQ part */
 
+.faq {
+  background-color: #FFFFFF;
+}
 
 /* END of FAQ part */
 
