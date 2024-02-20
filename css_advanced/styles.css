@@ -341,7 +341,7 @@ but it ended up removing margin on the right side altogether
   position: absolute; /* Very important just like the `position: relative` above in the `.video .vids-block .video-div{}`.
   It is basically a position relative to the outer "container". */
   top: 45px;
-  left: 96px;
+  right: 95px;
   cursor: pointer;
 }
 
