@@ -67,7 +67,7 @@ body {
   margin: auto;
 }
 
-.header img {
+img.logo {
   width: 167px;
   height: 30px;
 }
@@ -411,6 +411,7 @@ section.membership span {
   box-shadow: 0px 2px 20px 0px #00000080;
   border: none; /* no one likes default button border */
   border-radius: 20px;
+  margin-bottom: 52px;
 }
 
 /* END of Membership part */
@@ -420,6 +421,43 @@ section.membership span {
 
 .faq {
   background-color: #FFFFFF;
+  padding: 67px 270px 84px 270px;
+}
+
+.faq .faq-container {
+  color: #071629;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin: auto;
+  max-width: 920px;
+}
+
+.faq h1 {
+  font-size: 60px;
+  font-family: "SourceSansPro-Light";
+  text-align: center;
+}
+
+.faq .faq-container .faq-row .faq-column {
+  padding-top: 74px;
+}
+
+.faq .faq-container .faq-row:first-of-type .faq-column {
+  padding-right: 220px;
+}
+
+.faq .faq-container .faq-row .faq-column h2 {
+  padding-bottom: 30px;
+  font-size: 16px;
+  font-family: "SourceSansPro-Bold";
+  line-height: 20px;
+}
+
+.faq .faq-container .faq-row .faq-column p {
+  font-size: 14px;
+  font-family: "SourceSansPro-Regular";
+  opacity: 50%;
+  line-height: 24px;
 }
 
 /* END of FAQ part */
@@ -427,5 +465,44 @@ section.membership span {
 
 /* -------Footer */
 
+footer {
+  color: #FFFFFF;
+}
+
+.footer-container {
+  padding: 95px 0 75px 0;
+  max-width: 1035px;
+  margin: auto;
+}
+
+.logo-links {
+  display: flex;
+  align-items: center;
+  gap: 738px;
+}
+
+.logo-links img.logo {
+  margin: auto;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+  /* margin: auto; */
+}
+
+.footer-links img {
+  height: 30px;
+  width: 30px;
+}
+
+.footer-div p {
+  font-family: "SourceSansPro-Regular";
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  padding-bottom: 39px;
+  opacity: 35%;
+}
 
 /* END of Footer */
